@@ -1,11 +1,10 @@
-Hierarchical Image Graph with Scale Importance
+HIERARCHICAL GRAPH NEURAL NETWORKS BASED ON MULTI-SCALE IMAGE REPRESENTATIONS
 =====
+This is the MsC Dissertation project of [João Pedro Oliveira Batisteli](https://lattes.cnpq.br/8128547685252443) for evaluating the impact of hierarchical segmentation for create graph in image-graph classification.
 
-Implementation of our IEEE ISM 2023 paper "Multi-Scale Image Graph Representation: A Novel GNN Approach for Image Classification through Scale Importance Estimation" authored by:
-[João Pedro Oliveira Batisteli](https://lattes.cnpq.br/8128547685252443), [Silvio Jamil F. Guimarães](http://lattes.cnpq.br/8522089151904453) and
-[Zenilton K. G. Patrocínio Jr](http://lattes.cnpq.br/8895634496108399),
+##Abstract
 
-age representation as graphs can enhance the understanding of image semantics and facilitate multi-scale image representation. However, existing methods often overlook the significance of the relationship between elements at each scale or fail to encode the hierarchical relationship between graph elements. Moreover, the performance of GNNs still lags behind traditional CNNs due to the loss of information during dimensionality reduction when creating graphs from images. To cope with that, we introduce four novel approaches for graph construction from images. These approaches utilize a hierarchical image segmentation technique to generate segmentation at multiple scales and, in one of them, incorporate edges to encode the relationships at each scale.
+Image representation as graphs can enhance the understanding of image semantics and facilitate multi-scale image representation. However, existing methods often overlook the significance of the relationship between elements at each scale or fail to encode the hierarchical relationship between graph elements. Moreover, the performance of GNNs still lags behind traditional CNNs due to the loss of information during dimensionality reduction when creating graphs from images. To cope with that, we introduce four novel approaches for graph construction from images. These approaches utilize a hierarchical image segmentation technique to generate segmentation at multiple scales and, in one of them, incorporate edges to encode the relationships at each scale.
 
 ## Getting started
 
