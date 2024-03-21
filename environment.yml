@@ -1,4 +1,4 @@
-name: higsi
+name: hierarchical_gnns
 channels:
   - pytorch
   - nvidia

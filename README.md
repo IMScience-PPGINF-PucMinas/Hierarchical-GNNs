@@ -5,7 +5,7 @@ Implementation of our IEEE ISM 2023 paper "Multi-Scale Image Graph Representatio
 [João Pedro Oliveira Batisteli](https://lattes.cnpq.br/8128547685252443), [Silvio Jamil F. Guimarães](http://lattes.cnpq.br/8522089151904453) and
 [Zenilton K. G. Patrocínio Jr](http://lattes.cnpq.br/8895634496108399),
 
-Image representation as graphs can enhance the understanding of image semantics and facilitate multi-scale image representation. However, existing methods often overlook the significance of the relationship between elements at each scale or fail to encode the hierarchical relationship between graph elements. To cope with that, we introduce a novel approach for graph construction from images. This approach utilizes a hierarchical image segmentation technique to generate segmentation at multiple scales and incorporates edges to encode the relationships at each scale. We also propose a new readout function that weighs the importance of each scale when deriving a fixed-size graph representation. Furthermore, we present a new model incorporating those ideas -- called Hierarchical Image Graph with Scale Importance (HIGSI). Experimental results on the CIFAR-10 database indicate that our proposed model outperforms (or closely matches) state-of-the-art and baseline models while utilizing smaller graphs.
+age representation as graphs can enhance the understanding of image semantics and facilitate multi-scale image representation. However, existing methods often overlook the significance of the relationship between elements at each scale or fail to encode the hierarchical relationship between graph elements. Moreover, the performance of GNNs still lags behind traditional CNNs due to the loss of information during dimensionality reduction when creating graphs from images. To cope with that, we introduce four novel approaches for graph construction from images. These approaches utilize a hierarchical image segmentation technique to generate segmentation at multiple scales and, in one of them, incorporate edges to encode the relationships at each scale.
 
 ## Getting started
 
@@ -14,22 +14,22 @@ Image representation as graphs can enhance the understanding of image semantics 
 0. Clone this repository
 
 ```
-git clone "https://github.com/IMScience-PPGINF-PucMinas/HIGSI.git"
-cd "HIGSI"
+git clone "https://github.com/IMScience-PPGINF-PucMinas/Hierarchical-GNNs.git"
+cd "Hierarchical-GNNs"
 ```
 
 1. Create and activate the environment
 
 ```bash
 conda env create -f environment.yml
-conda activate higsi
+conda activate hierarchical_gnns
 ```
 
 2. Prepare feature files
 
-The program will download the CIFAR-10 dataset and generate the graphs at first time you execute the training or test script. The graphs will be saved in the `data/processed` for future use. 
+The program will download the CIFAR-10 and STL-10 datasets and generate the graphs at first time you execute the training or test script. The graphs will be saved in the `data/processed` for future use.
 
-If you want to change the target number of superpixels, you need to modify the `nodes` parameter in the training files for each model. The nodes parameter determines how many superpixels the model will generate. For the HIGHSI model, the training file is MG_train.py. You can find the nodes parameter on lines 97, 98 and 99. For the BRM model, the training file is train.py. You can find the nodes parameter on lines 86, 87 and 88.
+If you want to change the target number of superpixels, you need to modify the `nodes` parameter in the training files for each model. The nodes parameter determines how many superpixels the model will generate. For the HIGSI model, the training file is MG_train.py. You can find the nodes parameter on lines 97, 98 and 99. For the BRM model, the training file is train.py. You can find the nodes parameter on lines 86, 87 and 88.
 
 The dataset will be saved in the `data/processed` folder after you create it. If you want to generate new graphs, you have to delete the existing files in that folder first. Otherwise, the program will use the old files and not create new ones.
 

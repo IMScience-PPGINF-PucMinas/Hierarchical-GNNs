@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import mlflow.pytorch
 from disf import DISF_Superpixels
-from dataset_creation import Cifar10_graphs
+from dataset_creation import Cifar10_graphs, STL10_graphs
 from sklearn.metrics import  accuracy_score
 from torch_geometric.loader import DataLoader
 from torch.utils.data.sampler import SubsetRandomSampler

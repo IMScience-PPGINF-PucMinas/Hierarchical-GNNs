@@ -3,7 +3,7 @@ import numpy as np
 import torch.nn as nn
 from model import BRM
 from sklearn.metrics import accuracy_score
-from dataset_creation import Cifar10_graphs
+from dataset_creation import Cifar10_graphs, STL10_graphs
 from torch_geometric.loader import DataLoader
 import sys
 

@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch_geometric.data import Data
 from model import HIGSI
 from sklearn.metrics import accuracy_score
-from dataset_creation import MG_Cifar10_graphs
+from dataset_creation import MG_Cifar10_graphs, MG_STL10_graphs
 from torch_geometric.loader import DataLoader
 import sys
 

@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import mlflow.pytorch
 from torch_geometric.data import Data
-from dataset_creation import MG_Cifar10_graphs
+from dataset_creation import MG_Cifar10_graphs, MG_STL10_graphs
 from sklearn.metrics import  accuracy_score
 from torch_geometric.loader import DataLoader
 from torch_geometric.utils import to_networkx
